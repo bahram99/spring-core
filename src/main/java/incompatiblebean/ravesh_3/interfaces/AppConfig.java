@@ -25,7 +25,7 @@ public class AppConfig {
         Single single = context.getBean(Single.class);
 
         single.gettime();
-        Thread.sleep(3000);
+        Thread.sleep(4000);
         single.gettime();
     }
 }
