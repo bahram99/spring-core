@@ -1,0 +1,6 @@
+
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ô…ˆÚùÿÿÿÿ
+€
+java:S4602"^Remove the annotation "@ComponentScan" or move the annotated class out of the default package.(èíÒúÿÿÿÿ8âŸ‹¾ğ.
+u
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ8ô‹Ù½ğ.

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean class="person" name="pers"/>
+    <bean class="person" id="pers2" />
+    <alias name="pers2" alias="salam"/>
+
+    <bean name="two" class="autowired.two"/>
+    <!-- autowired -->
+
+    <bean name="car" class="anisa.Car" scope="prototype"/>
+
+    <bean name="one1" class="autowired.one" autowire="byName"/>
+    <bean name="one2" class="autowired.one" autowire="byType"/>
+    <bean name="one3" class="autowired.one" autowire="constructor"/>
+
+    <bean name="uc" class="autowired.usecontext"/>
+</beans>
