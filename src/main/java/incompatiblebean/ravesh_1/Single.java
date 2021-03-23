@@ -13,6 +13,7 @@ public class Single {
 
     @Lookup
     public Prototype getPrototype(){
+        // spring writed body
         return null;
     }
 }

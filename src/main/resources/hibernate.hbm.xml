@@ -1,0 +1,12 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="hibernate.entity.book" table="book">
+        <id type="int" column="id" name="id"/>
+        <property name="name" type="java.lang.String" column="title"/>
+        <property name="author" type="java.lang.String" column="author"/>
+     </class>
+</hibernate-mapping>

@@ -1,10 +1,12 @@
 package autowired;
 
+import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class automain {
-    public static void main(String[] args) {
+public class automain{
+    public static void main(String[] args) {/*
         ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
 
         one one1 = (one) context.getBean("one1");
@@ -17,6 +19,12 @@ public class automain {
         System.out.println(one3.getCar());
 
         usecontext ioccontainer = (usecontext) context.getBean("uc");
-        System.out.println(ioccontainer.getApplicationContext());
+        System.out.println(ioccontainer.getApplicationContext());*/
+
+        ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
+
+        awareclass awareclass = new awareclass();
+        awareclass.setApplicationContext(context);
+
     }
 }

@@ -22,6 +22,12 @@ public class AppConfig {
         return new Prototype();
     }
 
+    @Bean
+    @Scope("singleton")
+    public onescop sss(){
+        return new onescop();
+    }
+
     public static void main(String[] args) throws InterruptedException {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
         Single single = context.getBean(Single.class);
@@ -29,5 +35,14 @@ public class AppConfig {
         single.gettime();
         Thread.sleep(3000);
         single.gettime();
+
+        onescop a = context.getBean(onescop.class);
+        a.setNam("bahram");
+        System.out.println(a.getNam());
+
+        onescop b = context.getBean(onescop.class);
+        System.out.println(b.getNam());
+        a.setNam("ali");
+        System.out.println(a.getNam());
     }
 }
